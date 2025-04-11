@@ -1,12 +1,46 @@
-<!-- templates/dashboard.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <title>Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    a {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      color: #007bff;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bem-vindo, {{ usuario }}!</h1>
+  <img src="{{ url_for('static', filename='img/momo.jpg') }}" alt="Imagem especial">
+  <h1>Te amo de montão ❤️😁</h1>
   <a href="/logout">Sair</a>
 </body>
 </html>
