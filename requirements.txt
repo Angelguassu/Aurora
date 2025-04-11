@@ -1,0 +1,4 @@
+flask
+flask-mysql-connector
+gunicorn
+python-dotenv
