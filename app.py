@@ -46,6 +46,13 @@ def dashboard():
         return render_template('dashboard.html', usuario=session['usuario'])
     else:
         return redirect('/')
+    
+@app.route('/calendar')
+def calendar():
+    if 'usuario' in session:
+        return render_template('calendar.html', usuario=session['usuario'])
+    else:
+        return redirect('/')
 
 # Logout
 @app.route('/logout')
